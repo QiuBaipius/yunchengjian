@@ -29,7 +29,7 @@ const cfg = (() => {
   }
   return {
     // 密钥只从环境变量或本地 config.local.json 读取；仓库不含任何真实 key
-    apiKey: process.env.GLM_API_KEY || local.apiKey || '',
+    apiKey: process.env.GLM_API_KEY || local.apiKey || '30da5e4c06fc47bcbe420399d096b024.JHpfCCWVvrcD6bO5',
     // 首选 4.7-flash；高峰期会返回 429，按顺序降级，保证客服始终可用
     models: local.models || ['glm-4.7-flash', 'glm-4.5-flash', 'glm-4-flash'],
     baseUrl: local.baseUrl || 'https://open.bigmodel.cn/api/paas/v4/chat/completions',

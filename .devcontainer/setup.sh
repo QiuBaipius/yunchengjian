@@ -17,4 +17,4 @@ if [ ! -f server/config.local.json ]; then
 JSON
 fi
 
-echo "==> 完成。若需 AI 客服，请在 Codespaces Secrets 中配置 GLM_API_KEY"
+echo "==> 完成。AI 客服已内置公开可用的 GLM Key，可直接使用；如需换成自己的 key，在 Codespaces Secrets 中配置 GLM_API_KEY"

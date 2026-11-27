@@ -29,7 +29,7 @@ node server/index.mjs
 
 打开 `http://127.0.0.1:5173/`。Windows 用户也可直接双击 `启动云乘见.bat`。
 
-客服的 AI 回答需要智谱 GLM API Key。复制 `.env.example` 为 `server/config.local.json` 并填入 `apiKey`，或设置环境变量 `GLM_API_KEY`。未配置时客服仅给出规则库原文兜底，其余功能不受影响。
+客服已内置一个公开可用的智谱 GLM Key，在 Codespaces 或本地克隆后无需配置即可直接对话。如需换成自己的 Key，设置环境变量 `GLM_API_KEY`，或复制 `.env.example` 为 `server/config.local.json` 并填入 `apiKey`。
 
 ## 许可
 

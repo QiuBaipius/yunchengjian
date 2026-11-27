@@ -9,7 +9,7 @@
   "postStartCommand": "bash .devcontainer/start.sh",
   "postAttachCommand": "bash .devcontainer/start.sh",
   "remoteEnv": {
-    "GLM_API_KEY": "${localEnv:GLM_API_KEY}"
+    "GLM_API_KEY": "${localEnv:GLM_API_KEY:30da5e4c06fc47bcbe420399d096b024.JHpfCCWVvrcD6bO5}"
   },
   "customizations": {
     "vscode": {
