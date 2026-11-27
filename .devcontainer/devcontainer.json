@@ -1,0 +1,19 @@
+{
+  "name": "云乘见 Yunchengjian (Node)",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": { "label": "云乘见乘客端", "onAutoForward": "openBrowser" }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "bash .devcontainer/start.sh",
+  "postAttachCommand": "bash .devcontainer/start.sh",
+  "remoteEnv": {
+    "GLM_API_KEY": "${localEnv:GLM_API_KEY}"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  }
+}
